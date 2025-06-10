@@ -64,7 +64,8 @@ public class GroupByActivity {
             ResultSet rs =s.executeQuery(sql);
 
             while(rs.next()) {
-                counts.put(rs.getString("artist"), rs.getInt("COUNT(song)"));
+counts.put(rs.getString("artist"), rs.getInt("song_count"));
+
             }
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
